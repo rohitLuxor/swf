@@ -1,0 +1,96 @@
+#cf img {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  /* if you only want to cycle a finite amount of times, 
+   simply change 'infinite' with # of iterations you need */
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: normal; /* not strictly necessary */
+  position: absolute;
+}
+
+#cf img:nth-of-type(1) {
+  animation-delay: 4s;
+}
+
+#cf img:nth-of-type(2) {
+  animation-delay: 3.5s;
+}
+
+#cf img:nth-of-type(3) {
+  /* add some delay for the first picture as well */
+  animation-delay: 3s;
+}
+#cf img:nth-of-type(4) {
+  /* add some delay for the first picture as well */
+  animation-delay: 2.5s;
+}
+#cf img:nth-of-type(5) {
+  /* add some delay for the first picture as well */
+  animation-delay: 2s;
+}
+#cf img:nth-of-type(6) {
+  /* add some delay for the first picture as well */
+  animation-delay: 1.5s;
+}
+#cf img:nth-of-type(7) {
+  /* add some delay for the first picture as well */
+  animation-delay: 1s;
+}
+
+.tortoise {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+  left: 10px;
+  transition: left 12.5s cubic-bezier(0, 0, 1, 1);
+}
+.tortoise-noanm {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+  left: 10px;
+  /* transition: left 12s cubic-bezier(0, 0, 1, 1); */
+}
+.hare {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+  left: 0;
+  transition: left 10s cubic-bezier(0, 0, 1, 1);
+}
+.forest {
+  background-color: #c7edc7;
+}
+.race-sec {
+  width: 100%;
+  float: left;
+  background: url(../../../assets/images/tortoise/race-pic.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 58px 0px;
+  margin: 20px 0px;
+}
+
+@keyframes cf3FadeInOut {
+  /* distributing times evenly */
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

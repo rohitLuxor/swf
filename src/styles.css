@@ -1,0 +1,488 @@
+*
+{
+	box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+	margin:0px;
+	font-family: 'Raleway', sans-serif!important;
+	font-weight: 700!important;
+	color: #373736;
+}
+a{
+	font-family: 'Lato', sans-serif;
+}
+ul{
+	padding:0px;
+	margin:0px;
+}
+h1{
+    font-size: 37px;
+}
+h2{
+	font-size:30px;
+}
+h3{
+	font-size:24px;
+}
+p{
+font-family: 'Lato', sans-serif;
+}
+.container{
+	width:100%;
+	max-width:1170px;
+	float:none;
+	margin:0 auto;
+}
+.upper-header {
+    width: 100%;
+    float: left;
+    margin: 10px 0px;
+}
+header.siteHeader {
+    width: 100%;
+    float: left;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px#ddd;
+    border-top: 9px solid #4d778d;
+}
+.upper-header .logo-sec {
+    width: 30%;
+    float: left;
+}
+.factor .text-bar p.scroll {
+    border: 1px solid #4d778d;
+    padding: 10px;
+	overflow:hidden;
+    height: 150px;
+}
+.upper-header .logo-sec a {
+    width: 100%;
+    float: left;
+}
+.upper-header .logo-sec a img {
+    width: 100%;
+}
+.navbar {
+    width: 30%;
+    float: right;
+}
+.upper-header ul {
+    width: 100%;
+    float: left;
+}
+.upper-header ul li {
+    width: auto;
+    float: left;
+    padding: 10px 16px 0px;
+    list-style: none;
+}
+.upper-header ul li a img {
+    width: 100%;
+    max-width: 40px;
+}
+.upper-header ul li:last-child{
+	padding-right:0px;
+}
+.content-sec {
+    width: 100%;
+    float: left;
+}
+.content-sec .left-bar {
+    width: 30%;
+    float: left;
+    padding: 20px 0px;
+}
+.content-sec .left-bar .sec-bar {
+    border: 1px solid #4d778d;
+    border-radius: 50px;
+    border-left: 30px solid #4d778d;
+    padding: 10px 20px;
+	border-right: 30px solid #4d778d;
+	width: 100%;
+    float: left;
+}
+.content-sec .left-bar .sec-bar p {
+    width: 100%;
+    float: left;
+    margin: 0px;
+}
+.content-sec .left-bar .sec-bar p i {
+    background: #4d778d;
+    color: #fff;
+    padding: 6px 8px;
+    margin: 0px 6px;
+}
+.text-bar h2 {
+    font-size: 22px;
+    color: #db8c12;
+}
+.text-bar {
+    width: 100%;
+    float: left;
+    margin: 25px 0px;
+}
+.text-bar p.scroll {
+    border: 1px solid #4d778d;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 208px;
+}
+.text-bar a {
+    background: #4d778d;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 40px;
+    margin: 5px 0px;
+    width: auto;
+    float: left;
+    border-radius: 4px;
+	transition: 0.35s all ease;
+}
+.right-sec {
+    width: 70%;
+    float: left;
+    padding: 40px;
+	position: relative;
+}
+.right-sec .tabing-sec {
+    width: 50%;
+    float: left;
+    border: 1px solid #db8c12;
+	background: #fffaf3;
+	    border-radius: 6px;
+}
+.right-sec .tabing-sec .tab {
+    width: 100%;
+    float: left;
+}
+.right-sec .tabing-sec .tab button {
+    border: none;
+    background: #ffd18d;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.text-bar a:hover {
+    filter: brightness(1.5);
+    transition: 0.35s all ease;
+}
+.right-sec .tabing-sec .tab button:focus {
+    outline: none;
+    border-top: 2px solid #f3a736;
+    background: #fffaf3;
+}
+.tabcontent {
+    padding: 10px;
+    width: 100%;
+    float: left;
+}
+.tabcontent .slidecontainer input#myRange {
+    width: 79%;
+    float: left;
+}
+.tabcontent span {
+    border: 1px solid #ddd;
+    background: #fff;
+    width: 12%;
+    float: left;
+    text-align: center;
+    color: #000!important;
+}
+.tabcontent .icon-sec img {
+    width: 100%;
+    max-width: 22px;
+}
+.tabcontent .icon-sec {
+    width: 7%;
+    float: left;
+}
+.right-sec .tabing-sec .checkbox-sec {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.right-sec .tabing-sec .checkbox-sec input[type="checkbox"] {
+    width: 10%;
+    float: left;
+}
+.right-sec .tabing-sec .checkbox-sec p {
+    width: 85%;
+    float: left;
+    margin: 0px;
+    font-size: 15px;
+}
+.graph-sec {
+    width: 45%;
+    float: left;
+    margin-left: 30px;
+}
+.graph-sec img {
+    width: 100%;
+}
+.race-sec {
+    width: 100%;
+    float: left;
+}
+.race-sec img {
+    width: 100%;
+    margin-top: 8px;
+}
+.content-sec .left-bar .sec-bar a {
+    width: 10;
+    text-decoration: none;
+    color: #4d778d;
+    font-size: 25px;
+    padding: 0px 7px;
+    font-weight: 700;
+}
+.question-sec {
+    width: 100%;
+    float: left;
+    text-align: center;
+	    position: relative;
+}
+.question-sec p {
+    width: 53%;
+    float: left;
+    text-align: right;
+}
+.question-sec i, .question-sec a {
+    width: auto;
+    float: left;
+    background: #4d778d;
+    color: #fff;
+    padding: 6px;
+    margin: 12px 5px;
+}
+
+.question-sec a {
+    background: none!important;
+    color: #4d778d;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/*---------reflection-------------*/
+ .right-sec .checkbox-sec {
+    width: 50%;
+    FLOAT: LEFT;
+    background: #fffbe7;
+    padding: 10px;
+	height: 350px;
+}
+.modeling .checkbox-sec{
+	height:auto;
+}
+.right-sec .checkbox-sec .check-sec {
+    background: none;
+}
+.right-sec .checkbox-sec .check-sec input[type="radio"], .right-sec .checkbox-sec .check-sec input[type="checkbox"]  {
+    width: 10%;
+    float: left;
+}
+.right-sec .checkbox-sec .check-sec p {
+    background: none!important;
+    width: 90%;
+    float: left;
+}
+.right-sec .checkbox-sec .check-sec p {
+    background: none!important;
+    width: 85%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.right-sec .checkbox-sec .check-sec {
+    background: none;
+    width: 100%;
+    float: left;
+    margin: 5px 0px;
+}
+.right-sec .checkbox-sec p {
+    background: #f7ab62;
+    padding: 6px;
+}
+.line-tpe {
+    width: 100%;
+    float: left;
+    margin: 20px 0px;
+    border-top: 2px solid #f7ab62;
+}
+
+/*---------reflection-------------*/
+.right-sec .side-toggle {
+    position: absolute;
+    right: -109px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.right-sec .fraction-img {
+    width: 100%;
+    float: left;
+}
+.right-sec .fraction-img img {
+    width: 100%;
+    max-width: 550px;
+}
+.question-sec img {
+    width: 11%;
+    float: left;
+    position: absolute;
+    left: 53px;
+}
+.question-sec i.yellow {
+    background: #f7c22f;
+}
+
+/*------------------responsive--------------*/
+
+@media only screen and (max-width:1400px){
+.container{
+	width:95%;
+}
+.right-sec .side-toggle {
+    right: -79px;
+}
+}
+@media only screen and (max-width:1169px){
+.navbar {
+    width: 33%;
+}
+.content-sec .left-bar .sec-bar p i {
+    background: #4d778d;
+    color: #fff;
+    padding: 6px 8px;
+    margin: 0px 0px;
+}
+.right-sec .side-toggle {
+    right: -56px;
+}
+}
+@media only screen and (max-width:1099px){
+.navbar {
+    width: 36%;
+}
+.content-sec .left-bar .sec-bar p i {
+    padding: 6px 5px;
+}
+.question-sec p {
+    width: 50%;
+}
+.question-sec img {
+    width: 10%;
+}
+}
+@media only screen and (max-width:1024px){
+.navbar {
+    width: 40%;
+}
+
+element.style {
+}
+.content-sec .left-bar .sec-bar {
+    padding: 10px 10px;
+}
+.question-sec a {
+    margin: 12px 3px;
+}
+.right-sec {
+    padding: 40px 10px;
+}
+}
+@media only screen and (max-width:979px){
+.navbar {
+    width: 47%;
+}
+.content-sec .left-bar {
+    width: 37%;
+}
+.right-sec {
+    width: 62%;
+}
+.graph-sec {
+    width: 43%;
+}
+.right-sec .side-toggle {
+    right: -58px;
+}
+}
+@media only screen and (max-width:799px){
+.navbar {
+    width: 50%;
+}
+.question-sec a {
+    margin: 12px 2px;
+}
+.right-sec .tabing-sec {
+    width: 54%;
+}
+.graph-sec {
+    margin-left: 11px;
+}
+}
+@media only screen and (max-width:767px){
+.navbar {
+    width: 43%;
+}
+.upper-header ul li {
+    padding: 10px 10px 0px;
+}
+.upper-header ul li a img {
+    width: 100%;
+    max-width: 30px;
+}
+.content-sec .left-bar {
+    width: 100%;
+}
+.right-sec {
+    width: 100%;
+}
+}
+@media only screen and (max-width: 639px){
+.navbar {
+    width: 54%;
+}
+.right-sec {
+    padding: 0px 10px;
+}
+.right-sec .side-toggle {
+    right: -40px;
+}
+}
+@media only screen and (max-width: 479px){
+.upper-header .logo-sec {
+    width: 100%;
+    float: left;
+}
+.navbar {
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+.upper-header ul li {
+    padding: 18px 21px 0px;
+}
+.right-sec .tabing-sec {
+    width: 100%;
+}
+.graph-sec {
+    margin-left: 0px;
+    margin: 10px 0px;
+    width: 100%;
+}
+.right-sec .checkbox-sec {
+    width: 100%;
+}
+}
+@media only screen and (max-width:359px){
+.upper-header ul li {
+    padding: 18px 15px 0px;
+}
+}
+/*------------------responsive--------------*/
