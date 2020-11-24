@@ -24,6 +24,8 @@ export class TortoiseHareComponent implements OnInit {
   dataStep1: any[] = [];
   dataStep2: any = {};
   i = 0;
+
+  isToggle = false;
   constructor(private service: SwfServiceService) {
     this.getStep1Data();
   }
@@ -31,7 +33,7 @@ export class TortoiseHareComponent implements OnInit {
     this.i = this.i + 1;
     this.stageData = this.dataStep1[this.i];
   }
-  prevData(){
+  prevData() {
     this.i = this.i - 1;
     this.stageData = this.dataStep1[this.i];
   }
@@ -87,7 +89,7 @@ export class TortoiseHareComponent implements OnInit {
       'line',
       [
         [0, this.T1],
-        [(this.distance - 1) / this.T2, 50],
+        [(this.distance - this.T1) / this.T2, 50],
       ],
       {
         name: 'l1',
@@ -135,11 +137,44 @@ export class TortoiseHareComponent implements OnInit {
   }
 
   simulation() {
+    this.isToggle = true;
+    const Ttime = (50 - this.T1) / this.T2;
+    const Htime = 50 / this.H1;
+
+    const simTime = Ttime > Htime ? Htime : Ttime;
     this.hareImgSrc = 'assets/images/tortoise/runnig-hare.gif';
     this.torImgSrc = 'assets/images/tortoise/runnig-tortoise.gif';
     const tortoise = document.getElementById('tortoise');
     const hare = document.getElementById('hare');
+
+    tortoise.style.transition = `left ${Ttime}s cubic-bezier(0, 0, 1, 1)`;
+    hare.style.transition = `left ${Htime}s cubic-bezier(0, 0, 1, 1)`;
+
     tortoise.style.left = '500px';
     hare.style.left = '500px';
+
+    setTimeout(() => {
+      this.isToggle = false;
+      this.torImgSrc = 'assets/images/tortoise/12.svg';
+      tortoise.style.transition = ``;
+
+    }, simTime * 1000);
+
+    setTimeout(() => {
+      this.isToggle = false;
+      this.hareImgSrc = 'assets/images/tortoise/4.svg';
+      hare.style.transition = ``;
+    }, simTime * 1000);
+  }
+  reset() {
+    this.torImgSrc = 'assets/images/tortoise/12.svg';
+    this.hareImgSrc = 'assets/images/tortoise/4.svg';
+    const tortoise = document.getElementById('tortoise');
+    const hare = document.getElementById('hare');
+    tortoise.style.transition = ``;
+    hare.style.transition = ``;
+
+    tortoise.style.left = this.T1 * 10 + 'px';
+    hare.style.left = '0px';
   }
 }

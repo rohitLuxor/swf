@@ -181,9 +181,10 @@ header.siteHeader {
     float: left;
 }
 .tabcontent .slidecontainer input#myRange {
-    width: 79%;
+    width: 70%;
     float: left;
 }
+
 .tabcontent span {
     border: 1px solid #ddd;
     background: #fff;

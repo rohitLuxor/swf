@@ -33,16 +33,38 @@
       <div class="sec-bar">
         <p>
           Section:
-          <i (click)="getStep1Data()" [ngClass]="i == 0 ? 'yellow' : ''" class="fa fa-home" aria-hidden="true"></i>
-          <i (click)="getStep1Data()" [ngClass]="i == 1 ? 'yellow' : ''"  aria-hidden="true">|</i>
-          <i (click)="getStep2Data()" [ngClass]="i == 2 ? 'yellow' : ''"  aria-hidden="true">||</i>
+          <i
+            (click)="getStep1Data()"
+            [ngClass]="i == 0 ? 'yellow' : ''"
+            class="fa fa-home"
+            aria-hidden="true"
+          ></i>
+          <i
+            (click)="getStep1Data()"
+            [ngClass]="i == 1 ? 'yellow' : ''"
+            aria-hidden="true"
+            >|</i
+          >
+          <i
+            (click)="getStep2Data()"
+            [ngClass]="i == 2 ? 'yellow' : ''"
+            aria-hidden="true"
+            >||</i
+          >
         </p>
       </div>
       <div class="question-sec">
         <img src="assets/arrow.png" />
         <p>Question:</p>
-        <i (click)="nextPageData(k+1)" [ngClass]="i == k+1 ? 'yellow' : ''" *ngFor="let d of dataStep1 | slice:1:dataStep1.length-1; let k = index">{{k+1}}</i>
-
+        <i
+          (click)="nextPageData(k + 1)"
+          [ngClass]="i == k + 1 ? 'yellow' : ''"
+          *ngFor="
+            let d of dataStep1 | slice: 1:dataStep1.length - 1;
+            let k = index
+          "
+          >{{ k + 1 }}</i
+        >
 
         <a (click)="prevData()" class="previous round">&#8249;</a>
         <a (click)="nextData()" class="next round">&#8250;</a>
@@ -82,7 +104,18 @@
               id="myRange"
               [(ngModel)]="T1"
             />
-            <span id="f" style="font-weight: bold; color: red">{{ T1 }}</span>
+            <input
+              min="1"
+              max="100"
+              step=".1"
+              class="input-text"
+              type="number"
+              name="T1"
+              id="T1"
+              (change)="t1Change()"
+              [(ngModel)]="T1"
+            />
+            <!-- <span id="f" style="font-weight: bold; color: red">{{ T1 }}</span> -->
           </div>
           <div class="slidecontainer">
             <p><b>Tortoise:</b> average speed in meters per second:</p>
@@ -100,7 +133,18 @@
               (change)="t1Change()"
               [(ngModel)]="T2"
             />
-            <span id="f" style="font-weight: bold; color: red">{{ T2 }}</span>
+            <input
+              min="1"
+              max="100"
+              step=".1"
+              class="input-text"
+              type="number"
+              name="T2"
+              id="T2"
+              (change)="t1Change()"
+              [(ngModel)]="T2"
+            />
+            <!-- <span id="f" style="font-weight: bold; color: red">{{ T2 }}</span> -->
           </div>
         </div>
 
@@ -121,7 +165,18 @@
               (change)="t1Change()"
               [(ngModel)]="H1"
             />
-            <span id="f" style="font-weight: bold; color: red">{{ H1 }}</span>
+            <input
+              min="1"
+              max="100"
+              step=".1"
+              class="input-text"
+              type="number"
+              name="H1"
+              id="H1"
+              (change)="t1Change()"
+              [(ngModel)]="H1"
+            />
+            <!-- <span id="f" style="font-weight: bold; color: red">{{ H1 }}</span> -->
           </div>
           <div class="checkbox-sec">
             <input type="checkbox" />
@@ -132,23 +187,20 @@
       <div class="graph-sec">
         <div id="box" class="jxgbox" style="width: 300px; height: 300px"></div>
       </div>
-      <div class="race-sec">
-        <button (click)="simulation()">Simulate</button>
-        <div class="row forest">
-          <div class="row">
+
+       
+        <div class="row race-sec">
+          <button (click)="simulation()" class="btn btn-primary">Simulate</button>
+          <button (click)="reset()">Reset</button>
+          <div class="tortoise-div">
             <img class="tortoise" id="tortoise" [src]="torImgSrc" />
           </div>
-          <div class="row">
+          <div class="hare-div">
             <img class="hare" id="hare" [src]="hareImgSrc" />
-            <!-- <img
-            class="hare"
-            src="assets/images/tortoise/4.svg"
-            onclick="this.style.left='450px'"
-          /> -->
           </div>
         </div>
         <!-- <img src="assets/race-pic.jpg"/> -->
-      </div>
+ 
     </div>
   </div>
 </div>

@@ -40,43 +40,56 @@
 
 .tortoise {
   height: 50px;
-  width: 50px;
-  margin-top: 20px;
+  width: 60px;
+  margin-top: 0px;
   position: relative;
   cursor: pointer;
-  left: 10px;
-  transition: left 12.5s cubic-bezier(0, 0, 1, 1);
+  /* transition: left 12.5s cubic-bezier(0, 0, 1, 1); */
+}
+.tortoise-div {
+  position: relative;
+  top: 14px;
+}
+
+.hare-div {
+  position: relative;
+  bottom: 32px;
 }
 .tortoise-noanm {
   height: 50px;
   width: 50px;
-  margin-top: 20px;
+  margin-top: 0px;
   position: relative;
   cursor: pointer;
-  left: 10px;
+  left: 0;
   /* transition: left 12s cubic-bezier(0, 0, 1, 1); */
 }
 .hare {
   height: 50px;
   width: 50px;
+  margin-top: 0px;
   position: relative;
   cursor: pointer;
   left: 0;
-  transition: left 10s cubic-bezier(0, 0, 1, 1);
+  /* transition: left 10s cubic-bezier(0, 0, 1, 1); */
 }
-.forest {
+/* .forest {
   background-color: #c7edc7;
-}
+} */
 .race-sec {
-  width: 100%;
+  width: 660px;
   float: left;
   background: url(../../../assets/images/tortoise/race-pic.jpg);
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  padding: 58px 0px;
-  margin: 20px 0px;
+  background-size: contain;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  border-radius: 12px;
+}
+.input-text {
+  width: 50px;
 }
 
 @keyframes cf3FadeInOut {
