@@ -13,19 +13,54 @@
       <div class="navbar">
         <ul>
           <li>
-            <a style="cursor: pointer;"><img src="assets/GlobalImage/2.png" /></a>
+            <a class="audio-link">
+              <div class="audio-initial">
+                <img src="assets/GlobalImage/2.png" />
+              </div>
+              <div class="audio-hover">
+                <img src="assets/GlobalImage/Audio_hover.png" />
+              </div>
+            </a>
           </li>
           <li>
-            <a (click)="openInstruction()" style="cursor: pointer;"><img src="assets/GlobalImage/3.png" /></a>
+            <a (click)="openInstruction()" class="instruction-link">
+              <div class="instruction-initial">
+                <img src="assets/GlobalImage/3.png" />
+              </div>
+              <div class="instruction-hover">
+                <img src="assets/GlobalImage/Instruction_hover.png" />
+              </div>
+            </a>
           </li>
           <li>
-            <a style="cursor: pointer;"><img src="assets/GlobalImage/4.png" /></a>
+            <a class="vocab-link">
+              <div class="vocab-initial">
+                <img src="assets/GlobalImage/4.png" />
+              </div>
+              <div class="vocab-hover">
+                <img src="assets/GlobalImage/Vocab_Hover.png" />
+              </div>
+            </a>
           </li>
           <li>
-            <a (click)="openKeyConcept()" style="cursor: pointer;"><img src="assets/GlobalImage/5.png" /></a>
+            <a (click)="openKeyConcept()" class="concept-link">
+              <div class="concept-initial">
+                <img src="assets/GlobalImage/5.png" />
+              </div>
+              <div class="concept-hover">
+                <img src="assets/GlobalImage/KeyConcepts_Hover.png" />
+              </div>
+            </a>
           </li>
           <li>
-            <a (click)="printPage()" style="cursor: pointer;"><img src="assets/GlobalImage/6.png" /></a>
+            <a (click)="printPage()" class="print-link">
+              <div class="print-initial">
+                <img src="assets/GlobalImage/6.png" />
+              </div>
+              <div class="print-hover">
+                <img src="assets/GlobalImage/Print_hover.png" />
+              </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -89,7 +124,14 @@
         <h2>{{ stageData.stage_title }}</h2>
         <p class="scroll" [innerHTML]="stageData.stage_content"></p>
         <p>Click <b>Next </b>to continue.</p>
-        <a (click)="nextData()">Next</a>
+        <button (click)="nextData()" class="next-btn">
+          <div class="next-btn-initial">
+            <img src="assets/GlobalImage/Next.png" />
+          </div>
+          <div class="next-btn-hover">
+            <img src="assets/GlobalImage/Next_Rollover.png" />
+          </div>
+        </button>
       </div>
     </div>
     <div class="right-sec modeling">
